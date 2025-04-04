@@ -12,7 +12,7 @@ namespace Taxi.Web
 
         public static void Main(string[] args)
         {
-            // Agrega esto al inicio de tu aplicación (Program.cs)
+            // ignore certificate ssl (Program.cs)
             System.Net.ServicePointManager.ServerCertificateValidationCallback +=
                 (sender, certificate, chain, sslPolicyErrors) => true;
 
